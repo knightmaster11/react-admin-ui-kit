@@ -1,9 +1,7 @@
+import AppRoutes from "./routes/AppRoutes";
+
 function App() {
-  return (
-    <div>
-      React Admin UI Kit
-    </div>
-  )
+  return <AppRoutes />;
 }
 
-export default App
+export default App;
