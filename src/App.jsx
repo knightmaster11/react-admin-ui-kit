@@ -1,5 +1,9 @@
-export default function App() {
+function App() {
   return (
-    <h1>React Admin UI Kit</h1>
-  );
+    <div>
+      React Admin UI Kit
+    </div>
+  )
 }
+
+export default App
