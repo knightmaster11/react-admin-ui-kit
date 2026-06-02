@@ -164,6 +164,13 @@ http://localhost:5173
 * Statistics Card Component
 * Responsive Layout Structure
 
+### Day 3
+
+- Multi Page Navigation
+- Active Sidebar Menu
+- Dynamic Navbar Title
+- Route Management
+
 ---
 
 ## 🎯 Project Goal
