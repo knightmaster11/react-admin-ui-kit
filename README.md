@@ -171,6 +171,12 @@ http://localhost:5173
 - Dynamic Navbar Title
 - Route Management
 
+### Day 4
+
+- Reusable Data Table
+- Users Table Page
+- Search Input UI
+- Empty State
 ---
 
 ## 🎯 Project Goal
