@@ -58,6 +58,9 @@ export default function Users() {
         columns={columns}
         data={filteredUsers}
       />
+      <div className="mt-4 text-sm text-gray-500">
+  Showing 1 to 10 of 50 entries
+</div>
       <Pagination
   currentPage={currentPage}
   totalPages={5}
