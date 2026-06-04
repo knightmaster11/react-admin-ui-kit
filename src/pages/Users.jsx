@@ -1,6 +1,7 @@
 import AdminLayout from "../layouts/AdminLayout";
 import DataTable from "../components/DataTable";
-
+import { useState } from "react";
+import Pagination from "../components/Pagination";
 const columns = [
   {
     key: "id",
@@ -30,6 +31,15 @@ const users = [
 ];
 
 export default function Users() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Filter data users berdasarkan searchQuery
+  const filteredUsers = users.filter((user) =>
+    user.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    user.email.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <AdminLayout>
       <h1 className="text-3xl font-bold mb-6">
@@ -40,12 +50,19 @@ export default function Users() {
     type="text"
     placeholder="Search users..."
     className="border rounded-lg px-4 py-2"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
   />
 </div>
       <DataTable
         columns={columns}
-        data={users}
+        data={filteredUsers}
       />
+      <Pagination
+  currentPage={currentPage}
+  totalPages={5}
+  onPageChange={setCurrentPage}
+/>
     </AdminLayout>
   );
 }
