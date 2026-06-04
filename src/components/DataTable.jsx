@@ -2,6 +2,7 @@ export default function DataTable({
   columns,
   data,
 }) {
+
   return (
     <div className="overflow-x-auto bg-white rounded-lg shadow">
       <table className="w-full">
@@ -21,7 +22,7 @@ export default function DataTable({
         <tbody>
           {data.map((row, index) => (
             <tr
-              key={index}
+              key={row.id || index}
               className="border-t"
             >
               {columns.map((column) => (
