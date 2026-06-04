@@ -2,13 +2,21 @@
 
 Modern Admin Dashboard UI built with React, Vite, and Tailwind CSS.
 
+## 📊 Project Status
+
+**Version:** v0.1.0
+
+**Status:** Active Development 🚀
+
+---
+
 ## 🚀 Tech Stack
 
-* React 18
-* Vite 6
-* JavaScript + SWC
-* Tailwind CSS 3
-* React Router DOM
+- React 18
+- Vite 6
+- JavaScript + SWC
+- Tailwind CSS 3
+- React Router DOM
 
 ---
 
@@ -20,12 +28,17 @@ src
 ├── components
 │   ├── Navbar.jsx
 │   ├── Sidebar.jsx
-│   └── StatCard.jsx
+│   ├── StatCard.jsx
+│   ├── DataTable.jsx
+│   └── Pagination.jsx
 ├── hooks
 ├── layouts
 │   └── AdminLayout.jsx
 ├── pages
-│   └── Dashboard.jsx
+│   ├── Dashboard.jsx
+│   ├── Users.jsx
+│   ├── Products.jsx
+│   └── Settings.jsx
 ├── routes
 │   └── AppRoutes.jsx
 ├── services
@@ -39,12 +52,32 @@ src
 
 ## ✨ Current Features
 
-* Dashboard Layout
-* Sidebar Navigation
-* Top Navbar
-* Statistics Cards
-* React Router Setup
-* Reusable Layout Structure
+### Dashboard
+
+- Dashboard Layout
+- Statistics Cards
+- Responsive Content Area
+
+### Navigation
+
+- Sidebar Navigation
+- Top Navbar
+- Multi Page Navigation
+- Active Sidebar Menu
+- Dynamic Navbar Title
+
+### Data Management
+
+- Reusable DataTable Component
+- Search Input UI
+- Empty State Handling
+- Reusable Pagination Component
+
+### Architecture
+
+- Reusable Layout Structure
+- Component-Based Design
+- Route Management with React Router
 
 ---
 
@@ -54,7 +87,26 @@ src
 
 ![Dashboard Layout](./docs/images/dashboard-layout-v1.png)
 
-> Screenshot will be updated as development progresses.
+### Users Table
+
+![Users Table](./docs/images/users-table-v1.png)
+
+> Screenshots will be updated as development progresses.
+
+---
+
+## 💡 Why This Project?
+
+This project is built to provide a reusable and scalable admin dashboard starter kit using modern React tooling.
+
+The goal is to create a solid foundation for:
+
+- ERP Systems
+- Inventory Management Systems
+- CRM Applications
+- Financial Dashboards
+- Internal Business Applications
+- Administrative Panels
 
 ---
 
@@ -62,52 +114,107 @@ src
 
 ### Phase 1 - Dashboard Foundation
 
-* [x] Project Initialization
-* [x] Tailwind CSS Setup
-* [x] React Router Setup
-* [x] Folder Structure Setup
-* [x] Dashboard Layout
-* [x] Sidebar Component
-* [x] Navbar Component
-* [x] Statistics Cards
+- [x] Project Initialization
+- [x] Vite 6 Setup
+- [x] Tailwind CSS Setup
+- [x] React Router Setup
+- [x] Folder Structure Setup
+- [x] Dashboard Layout
+- [x] Sidebar Component
+- [x] Navbar Component
+- [x] Statistics Cards
 
 ### Phase 2 - Navigation
 
-* [ ] Users Page
-* [ ] Products Page
-* [ ] Settings Page
-* [ ] Active Sidebar Menu
-* [ ] Breadcrumb Navigation
+- [x] Users Page
+- [x] Products Page
+- [x] Settings Page
+- [x] Active Sidebar Menu
+- [x] Dynamic Navbar Title
+- [ ] Breadcrumb Navigation
 
 ### Phase 3 - Data Management
 
-* [ ] Data Table Component
-* [ ] Search Component
-* [ ] Filter Component
-* [ ] Pagination Component
-* [ ] Empty State Component
+- [x] Data Table Component
+- [x] Search Component
+- [x] Pagination Component
+- [x] Empty State Component
+- [ ] Filter Component
+- [ ] Sortable Columns
+- [ ] Server Side Pagination
 
 ### Phase 4 - UI Components
 
-* [ ] Modal Component
-* [ ] Drawer Component
-* [ ] Toast Notification
-* [ ] Confirm Dialog
-* [ ] Loading Skeleton
+- [ ] Modal Component
+- [ ] Drawer Component
+- [ ] Toast Notification
+- [ ] Confirm Dialog
+- [ ] Loading Skeleton
+- [ ] Badge Component
+- [ ] Dropdown Component
 
 ### Phase 5 - Authentication
 
-* [ ] Login Page
-* [ ] Register Page
-* [ ] Protected Routes
-* [ ] Authentication Layout
+- [ ] Login Page
+- [ ] Register Page
+- [ ] Protected Routes
+- [ ] Authentication Layout
+- [ ] Session Management
 
 ### Phase 6 - User Experience
 
-* [ ] Dark Mode
-* [ ] Theme Switcher
-* [ ] Mobile Responsive Sidebar
-* [ ] Accessibility Improvements
+- [ ] Dark Mode
+- [ ] Theme Switcher
+- [ ] Mobile Responsive Sidebar
+- [ ] Responsive Tables
+- [ ] Accessibility Improvements
+
+### Phase 7 - Advanced Components
+
+- [ ] Form Builder
+- [ ] Form Validation
+- [ ] Date Picker
+- [ ] File Upload Component
+- [ ] Dashboard Charts
+- [ ] Statistics Widgets
+
+### Phase 8 - Production Ready
+
+- [ ] Code Splitting
+- [ ] Lazy Loading
+- [ ] Error Boundary
+- [ ] Environment Configuration
+- [ ] Deployment Guide
+- [ ] Complete Documentation
+
+---
+
+## 🗺️ Upcoming Releases
+
+### v0.2.0
+
+- Modal Component
+- Confirm Dialog
+- Toast Notification
+
+### v0.3.0
+
+- Dark Mode
+- Theme Switcher
+- Responsive Sidebar
+
+### v0.4.0
+
+- Authentication Pages
+- Protected Routes
+- Login Layout
+
+### v1.0.0
+
+- Production Ready Admin UI Kit
+- Reusable Components Library
+- Complete Documentation
+- Public Release
 
 ---
 
@@ -149,48 +256,69 @@ http://localhost:5173
 
 ### Day 1
 
-* Project Initialization
-* Vite 6 Setup
-* Tailwind CSS Setup
-* React Router Setup
-* Folder Structure Setup
-* README Documentation
+- Project Initialization
+- Vite 6 Setup
+- Tailwind CSS Setup
+- React Router Setup
+- Folder Structure Setup
+- README Documentation
 
 ### Day 2
 
-* Dashboard Layout
-* Sidebar Navigation
-* Navbar Component
-* Statistics Card Component
-* Responsive Layout Structure
+- Dashboard Layout
+- Sidebar Navigation
+- Navbar Component
+- Statistics Card Component
+- Responsive Layout Structure
 
 ### Day 3
 
 - Multi Page Navigation
+- Users Page
+- Products Page
+- Settings Page
 - Active Sidebar Menu
 - Dynamic Navbar Title
-- Route Management
 
 ### Day 4
 
-- Reusable Data Table
+- Reusable DataTable Component
 - Users Table Page
 - Search Input UI
-- Empty State
+- Empty State Handling
+
+### Day 5
+
+- Reusable Pagination Component
+- Table Information Section
+- Users Table Enhancement
+- Pagination Integration
+
 ---
 
 ## 🎯 Project Goal
 
-This project aims to provide a reusable and scalable admin dashboard starter kit built with modern React tooling and best practices.
+Create a modern, reusable, and scalable Admin Dashboard Starter Kit using:
 
-Suitable for:
+- React
+- Vite
+- Tailwind CSS
 
-* Internal Business Applications
-* Admin Panels
-* Inventory Systems
-* CRM Systems
-* ERP Systems
-* Financial Dashboards
+Focused on real-world business applications such as:
+
+- ERP
+- Inventory
+- CRM
+- Finance
+- Internal Enterprise Systems
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+Feel free to fork the repository and submit a pull request.
 
 ---
 
