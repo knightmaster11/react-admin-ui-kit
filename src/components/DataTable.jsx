@@ -20,6 +20,16 @@ export default function DataTable({
         </thead>
 
         <tbody>
+          {data.length === 0 && (
+            <tr>
+              <td
+                colSpan={columns.length}
+                className="text-center py-10"
+              >
+                No data available
+              </td>
+            </tr>
+          )}
           {data.map((row, index) => (
             <tr
               key={row.id || index}
