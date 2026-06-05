@@ -1,6 +1,6 @@
 import AdminLayout from "../layouts/AdminLayout";
 import DataTable from "../components/DataTable";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Pagination from "../components/Pagination";
 import Modal from "../components/Modal";
 const columns = [
@@ -36,6 +36,22 @@ export default function Users() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isModalOpen, setIsModalOpen] =
   useState(false);
+
+useEffect(() => {
+  if (!isModalOpen) return;
+
+  const handleEsc = (e) => {
+    if (e.key === "Escape") {
+      setIsModalOpen(false);
+    }
+  };
+
+  window.addEventListener("keydown", handleEsc);
+
+  return () => {
+    window.removeEventListener("keydown", handleEsc);
+  };
+}, [isModalOpen]);
 
   // Filter data users berdasarkan searchQuery
   const filteredUsers = users.filter((user) =>
