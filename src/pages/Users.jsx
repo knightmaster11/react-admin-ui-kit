@@ -3,6 +3,8 @@ import DataTable from "../components/DataTable";
 import { useState,useEffect } from "react";
 import Pagination from "../components/Pagination";
 import Modal from "../components/Modal";
+import Toast from "../components/Toast";
+
 const columns = [
   {
     key: "id",
@@ -36,6 +38,8 @@ export default function Users() {
   const [searchQuery, setSearchQuery] = useState("");
   const [isModalOpen, setIsModalOpen] =
   useState(false);
+const [showToast, setShowToast] =
+  useState(false);
 
 useEffect(() => {
   if (!isModalOpen) return;
@@ -59,6 +63,10 @@ useEffect(() => {
     user.email.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
+  const handleSave = () => {
+  setIsModalOpen(false);
+  setShowToast(true);
+};
   return (
     <AdminLayout>
       <h1 className="text-3xl font-bold mb-6">
@@ -116,14 +124,21 @@ useEffect(() => {
         Cancel
       </button>
 
-      <button
-        className="bg-slate-700 text-white px-4 py-2 rounded"
-      >
-        Save
-      </button>
+     <button
+  onClick={handleSave}
+  className="bg-slate-700 text-white px-4 py-2 rounded-lg"
+>
+  Save
+</button>
     </div>
   </div>
 </Modal>
+<Toast
+  show={showToast}
+  message="User Added Successfully"
+  type="success"
+  onClose={() => setShowToast(false)}
+/>
     </AdminLayout>
   );
 }
