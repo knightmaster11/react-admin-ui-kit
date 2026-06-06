@@ -1,25 +1,3 @@
-# React Admin UI Kit
-
-Modern Admin Dashboard UI built with React, Vite, and Tailwind CSS.
-
-## 📊 Project Status
-
-**Version:** v0.1.0
-
-**Status:** Active Development 🚀
-
----
-
-## 🚀 Tech Stack
-
-* React 18
-* Vite 6
-* JavaScript + SWC
-* Tailwind CSS 3
-* React Router DOM
-
----
-
 ## 📁 Project Structure
 
 ```text
@@ -31,7 +9,8 @@ src
 │   ├── StatCard.jsx
 │   ├── DataTable.jsx
 │   ├── Pagination.jsx
-│   └── Modal.jsx
+│   ├── Modal.jsx
+│   └── Toast.jsx
 ├── hooks
 ├── layouts
 │   └── AdminLayout.jsx
@@ -77,8 +56,16 @@ src
 ### UI Components
 
 * Reusable Modal Component
+* Reusable Toast Notification
 * Overlay Close Support
 * ESC Key Close Support
+* Auto Close Toast Support
+* Multiple Toast Variants
+
+  * Success
+  * Error
+  * Warning
+  * Info
 
 ### Architecture
 
@@ -102,101 +89,25 @@ src
 
 ![Add User Modal](./docs/images/modal-add-user-v1.png)
 
+### Toast Notification
+
+![Toast Notification](./docs/images/toast-success-v1.png)
+
 > Screenshots will be updated as development progresses.
-
----
-
-## 💡 Why This Project?
-
-This project is built to provide a reusable and scalable admin dashboard starter kit using modern React tooling.
-
-The goal is to create a solid foundation for:
-
-* ERP Systems
-* Inventory Management Systems
-* CRM Applications
-* Financial Dashboards
-* Internal Business Applications
-* Administrative Panels
 
 ---
 
 ## 🚧 Roadmap
 
-### Phase 1 - Dashboard Foundation
-
-* [x] Project Initialization
-* [x] Vite 6 Setup
-* [x] Tailwind CSS Setup
-* [x] React Router Setup
-* [x] Folder Structure Setup
-* [x] Dashboard Layout
-* [x] Sidebar Component
-* [x] Navbar Component
-* [x] Statistics Cards
-
-### Phase 2 - Navigation
-
-* [x] Users Page
-* [x] Products Page
-* [x] Settings Page
-* [x] Active Sidebar Menu
-* [x] Dynamic Navbar Title
-* [ ] Breadcrumb Navigation
-
-### Phase 3 - Data Management
-
-* [x] Data Table Component
-* [x] Search Component
-* [x] Pagination Component
-* [x] Empty State Component
-* [ ] Filter Component
-* [ ] Sortable Columns
-* [ ] Server Side Pagination
-
 ### Phase 4 - UI Components
 
 * [x] Modal Component
+* [x] Toast Notification
 * [ ] Drawer Component
-* [ ] Toast Notification
 * [ ] Confirm Dialog
 * [ ] Loading Skeleton
 * [ ] Badge Component
 * [ ] Dropdown Component
-
-### Phase 5 - Authentication
-
-* [ ] Login Page
-* [ ] Register Page
-* [ ] Protected Routes
-* [ ] Authentication Layout
-* [ ] Session Management
-
-### Phase 6 - User Experience
-
-* [ ] Dark Mode
-* [ ] Theme Switcher
-* [ ] Mobile Responsive Sidebar
-* [ ] Responsive Tables
-* [ ] Accessibility Improvements
-
-### Phase 7 - Advanced Components
-
-* [ ] Form Builder
-* [ ] Form Validation
-* [ ] Date Picker
-* [ ] File Upload Component
-* [ ] Dashboard Charts
-* [ ] Statistics Widgets
-
-### Phase 8 - Production Ready
-
-* [ ] Code Splitting
-* [ ] Lazy Loading
-* [ ] Error Boundary
-* [ ] Environment Configuration
-* [ ] Deployment Guide
-* [ ] Complete Documentation
 
 ---
 
@@ -204,9 +115,9 @@ The goal is to create a solid foundation for:
 
 ### v0.2.0
 
-* Toast Notification
 * Confirm Dialog
 * Loading Skeleton
+* Badge Component
 
 ### v0.3.0
 
@@ -229,117 +140,18 @@ The goal is to create a solid foundation for:
 
 ---
 
-## 🛠 Installation
-
-Clone repository
-
-```bash
-git clone https://github.com/knightmaster11/react-admin-ui-kit.git
-```
-
-Go to project directory
-
-```bash
-cd react-admin-ui-kit
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-Run development server
-
-```bash
-npm run dev
-```
-
-Open browser
-
-```text
-http://localhost:5173
-```
-
----
-
 ## 📌 Development Progress
 
-### Day 1
+### Day 7
 
-* Project Initialization
-* Vite 6 Setup
-* Tailwind CSS Setup
-* React Router Setup
-* Folder Structure Setup
-* README Documentation
+* Reusable Toast Component
+* Success Notification
+* Auto Close Support
+* Multiple Toast Variants
 
-### Day 2
-
-* Dashboard Layout
-* Sidebar Navigation
-* Navbar Component
-* Statistics Card Component
-* Responsive Layout Structure
-
-### Day 3
-
-* Multi Page Navigation
-* Users Page
-* Products Page
-* Settings Page
-* Active Sidebar Menu
-* Dynamic Navbar Title
-
-### Day 4
-
-* Reusable DataTable Component
-* Users Table Page
-* Search Input UI
-* Empty State Handling
-
-### Day 5
-
-* Reusable Pagination Component
-* Table Information Section
-* Users Table Enhancement
-* Pagination Integration
-
-### Day 6
-
-* Reusable Modal Component
-* Add User Modal
-* Overlay Close Support
-* ESC Key Close Support
-
----
-
-## 🎯 Project Goal
-
-Create a modern, reusable, and scalable Admin Dashboard Starter Kit using:
-
-* React
-* Vite
-* Tailwind CSS
-
-Focused on real-world business applications such as:
-
-* ERP
-* Inventory
-* CRM
-* Finance
-* Internal Enterprise Systems
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome.
-
-Feel free to fork the repository and submit a pull request.
-
----
-
-## 📄 License
-
-MIT License
+```
+Success
+Error
+Warning
+Info
+```
